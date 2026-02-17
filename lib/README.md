@@ -28,7 +28,7 @@ Framework Core
 
 ### Server-side
 ```javascript
-import Divhunt from './framework/load.js';
+import Divhunt from './lib/load.js';
 
 const divhunt = new Divhunt();
 

@@ -3,7 +3,7 @@
 ## File structure
 
 ```
-framework/               Core Divhunt class + 16 mixins
+lib/                     Core Divhunt class + 16 mixins
   load.js                Entry point — creates Divhunt instance, handles signals
   src/
     divhunt.js           Main class (mixin-composed)
@@ -89,7 +89,7 @@ The framework uses Node.js package imports (`#` prefix) defined in `package.json
 ```json
 {
     "imports": {
-        "#framework/*": "./framework/*",
+        "#framework/*": "./lib/*",
         "#database/*": "./addons/core/database/back/*",
         "#servers/*": "./addons/core/servers/back/*",
         "#clients/*": "./addons/core/clients/back/*",
