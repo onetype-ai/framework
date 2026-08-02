@@ -1,0 +1,50 @@
+{
+    "name": "@onetype/framework",
+    "version": "2.2.0",
+    "description": "One addon abstraction, on the server and in the browser alike. Addons hold items, items are shaped by schemas, and everything else is registered onto them.",
+    "type": "module",
+    "main": "init.js",
+    "exports": "./init.js",
+    "imports": {
+        "#onetype/*": "./*",
+        "#onetype/core/*": "./core/*",
+        "#onetype/front/dom/*": "./addons/front/dom/*",
+        "#onetype/front/observer/*": "./addons/front/observer/*",
+        "#onetype/front/renders/*": "./addons/front/renders/*",
+        "#onetype/events/emitters/*": "./addons/events/emitters/*",
+        "#onetype/events/middlewares/*": "./addons/events/middlewares/*",
+        "#onetype/events/requests/*": "./addons/events/requests/*",
+        "#onetype/registry/methods/*": "./addons/registry/methods/*",
+        "#onetype/registry/schemas/*": "./addons/registry/schemas/*",
+        "#onetype/registry/skills/*": "./addons/registry/skills/*",
+        "#onetype/registry/tests/*": "./addons/registry/tests/*",
+        "#onetype/system/loader/*": "./addons/system/loader/*",
+        "#onetype/utility/cookie/*": "./addons/utility/cookie/*",
+        "#onetype/utility/expression/*": "./addons/utility/expression/*",
+        "#onetype/utility/markdown/*": "./addons/utility/markdown/*",
+        "#onetype/utility/route/*": "./addons/utility/route/*",
+        "#onetype/utility/validate/*": "./addons/utility/validate/*"
+    },
+    "dependencies": {
+        "acorn": "^8.17.0"
+    },
+    "author": "Dejan Tomic <hi@iamdejan.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/onetype-ai/framework"
+    },
+    "keywords": [
+        "framework",
+        "fullstack",
+        "isomorphic",
+        "addon",
+        "items",
+        "schema",
+        "emitters",
+        "middlewares"
+    ],
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
